@@ -1,0 +1,80 @@
+.knowledge-tree {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.tree-node {
+  margin-bottom: 10px;
+}
+
+.node-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.node-header.clickable {
+  background: #e3f2fd;
+  border: 2px solid #2196f3;
+}
+
+.node-header.clickable:hover {
+  background: #dbeafe;
+  border-color: #1976d2;
+}
+
+.node-header:hover {
+  background: #f0f0f0;
+}
+
+.node-toggle {
+  margin-right: 10px;
+  font-size: 12px;
+  color: #666;
+  width: 20px;
+  text-align: center;
+}
+
+.node-content {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.node-title {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.course-indicator {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.add-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .knowledge-tree {
+    padding: 15px;
+  }
+}
